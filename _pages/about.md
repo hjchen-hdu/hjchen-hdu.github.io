@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 # Brief Bio
-I am currently a PhD candidate at the Hangzhou Dianzi Unviersity, supervised by Professor Zhidong Zhao and Pengfei Jiao.
+I am currently a PhD candidate at the Hangzhou Dianzi Unviersity, supervised by Professor [Zhidong Zhao](https://faculty.hdu.edu.cn/wlkjaqxy/zzd/main.htm) and [Pengfei Jiao](https://cspjiao.github.io/). I am open to any research collaboration and internship. 🥳 Please feel free to contact me via [Email](hchen@hdu.edu.cn) or [WeChat](images/Wechat.jpg).
 
 My research interests include data mining, temporal graph neural networks, and graph for LLM-based agents.
 
@@ -29,12 +29,12 @@ My research interests include data mining, temporal graph neural networks, and g
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJCAI 2025</div><img src='images/survey.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJCAI'25</div><img src='images/survey.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [A Survey on Temporal Interaction Graph Representation Learning: Progress, Challenges, and Opportunities](https://www.ijcai.org/proceedings/2025/1166.pdf)
 
-Jiao, Pengfei, **Hongjiang Chen**, Xuan Guo, Zhidong Zhao, Dongxiao He, and Di Jin
+Pengfei Jiao, **Hongjiang Chen**, Xuan Guo, Zhidong Zhao, Dongxiao He, and Di Jin
 
 [**Paper**](https://arxiv.org/pdf/2505.04461)
 </div>
@@ -55,7 +55,7 @@ Jiao, Pengfei, **Hongjiang Chen**, Xuan Guo, Zhidong Zhao, Dongxiao He, and Di J
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECML-PKDD 2023</div><img src='images/TGAC.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECML-PKDD'23</div><img src='images/TGAC.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Temporal Graph Representation Learning with Adaptive Augmentation Contrastive](https://link.springer.com/chapter/10.1007/978-3-031-43415-0_40)
@@ -67,17 +67,22 @@ Jiao, Pengfei, **Hongjiang Chen**, Xuan Guo, Zhidong Zhao, Dongxiao He, and Di J
 </div>
 </div>
 
-# 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 
+<!-- 
 # 📖 Educations
 - *2019.06 - 2022.04 (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2015.09 - 2019.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-
+- *2015.09 - 2019.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
+<!-- 
 # 💬 Invited Talks
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
+- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
 
-# 💻 Internships
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
+<!-- # 🎖 Honors and Awards
+- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
+
+# 💻 Departmental & Academic Service
+- Conference Reviewer:
+  - AAAI-26, KDD-24
+- Journal Reviewer:
+  - TNNLS, Pattern Recognition, Neural Networks, Information Sciences
