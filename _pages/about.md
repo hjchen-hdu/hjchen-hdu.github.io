@@ -29,19 +29,43 @@ My research interests include data mining, temporal graph neural networks, and g
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJCAI 2025</div><img src='images/survey.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
+[A Survey on Temporal Interaction Graph Representation Learning: Progress, Challenges, and Opportunities](https://www.ijcai.org/proceedings/2025/1166.pdf)
 
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
+Jiao, Pengfei, **Hongjiang Chen**, Xuan Guo, Zhidong Zhao, Dongxiao He, and Di Jin
 
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+[**Paper**](https://arxiv.org/pdf/2505.04461)
 </div>
 </div>
 
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Pattern Recognition 2025</div><img src='images/TGFormer.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[TGFormer: Towards temporal graph transformer with auto-correlation mechanism](https://www.sciencedirect.com/science/article/abs/pii/S0031320325007137)
+
+**Hongjiang Chen**, Pengfei Jiao, Ming Du, Xuan Guo, Zhidong Zhao, Di Jin, and Xiao Liu
+
+[**Paper**](https://www.sciencedirect.com/science/article/abs/pii/S0031320325007137)
+[**Code**](https://github.com/hjchen-hdu/TGFormer)
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECML-PKDD 2023</div><img src='images/TGAC.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Temporal Graph Representation Learning with Adaptive Augmentation Contrastive](https://link.springer.com/chapter/10.1007/978-3-031-43415-0_40)
+
+**Hongjiang Chen**, Pengfei Jiao, Huijun Tang, and Huaming Wu
+
+[**Paper**](https://arxiv.org/pdf/2311.03897)
+[**Code**](https://github.com/hjchen-hdu/TGAC)
+</div>
+</div>
 
 # 🎖 Honors and Awards
 - *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
