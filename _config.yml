@@ -22,7 +22,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Hongjiang Chen"
-  avatar           : "images/android-chrome-512x512.png"
+  avatar           : "images/bio.jpf"
   bio              : "Ph.D. student at Hangzhou Dianzi University"
   location         : "Hangzhou, China"
   employer         :
@@ -45,7 +45,7 @@ author:
   lastfm           :
   linkedin         : # e.g., "linkedin username"
   dblp             : # e.g., "https://dblp.org/pid/xx/xxxx.html"
-  orcid            : "https://orcid.org/my-orcid?orcid=0009-0003-2652-9041"
+  orcid            : "https://orcid.org/0009-0003-2652-9041"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username

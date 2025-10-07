@@ -16,7 +16,7 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 <span class='anchor' id='about-me'></span>
-# Brief Bio
+# ☄️ Brief Bio
 I am currently a PhD candidate at the Hangzhou Dianzi Unviersity, supervised by Professor [Zhidong Zhao](https://faculty.hdu.edu.cn/wlkjaqxy/zzd/main.htm) and [Pengfei Jiao](https://cspjiao.github.io/). I am open to any research collaboration and internship. 🥳 Please feel free to contact me via [Email](hchen@hdu.edu.cn) or [WeChat](images/Wechat.jpg).
 
 My research interests include data mining, temporal graph neural networks, and graph for LLM-based agents.
