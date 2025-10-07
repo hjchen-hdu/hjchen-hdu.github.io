@@ -16,19 +16,17 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 <span class='anchor' id='about-me'></span>
-# ☄️ Brief Bio
-I am currently a PhD candidate at the Hangzhou Dianzi Unviersity, supervised by Professor [Zhidong Zhao](https://faculty.hdu.edu.cn/wlkjaqxy/zzd/main.htm) and [Pengfei Jiao](https://cspjiao.github.io/). I am open to any research collaboration and internship. 🥳 Please feel free to contact me via [Email](hchen@hdu.edu.cn) or [WeChat](images/Wechat.jpg).
+I am currently a PhD candidate at the Hangzhou Dianzi University, supervised by Professor [Zhidong Zhao](https://faculty.hdu.edu.cn/wlkjaqxy/zzd/main.htm) and [Pengfei Jiao](https://cspjiao.github.io/). I am open to any research collaboration and internship. 🥳 Please feel free to contact me via [Email](mailto:hchen@hdu.edu.cn) or [WeChat](images/Wechat.jpg).
 
 My research interests include data mining, temporal graph neural networks, and graph for LLM-based agents.
 
 # 🔥 News
 - *2025.09*: &nbsp;🎉🎉 One paper was accepted by IJCAI 2025 Survey track. 
-- *2025.02*: &nbsp;🎉🎉 One paper was accepted by Pattern Recognition Journal.
+- *2025.07*: &nbsp;🎉🎉 One paper was accepted by Pattern Recognition Journal.
 - *2024.03*: &nbsp;🎉🎉 One paper was accepted by Neural Networks Journal.
 - *2023.09*: &nbsp;🎉🎉 One paper was accepted by ECML-PKDD 2023.
 
 # 📝 Publications 
-
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJCAI'25</div><img src='images/survey.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 

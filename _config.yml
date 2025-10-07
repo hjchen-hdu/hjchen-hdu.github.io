@@ -22,42 +22,16 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Hongjiang Chen"
-  avatar           : "images/bio.jpf"
-  bio              : "Ph.D. student at Hangzhou Dianzi University"
+  avatar           : "images/bio.png"
+  bio              : "Ph.D. candidate at Hangzhou Dianzi University"
   location         : "Hangzhou, China"
-  employer         :
-  pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=hx7Xiu0AAAAJ&hl=en&authuser=2"
   email            : "hchen@hdu.edu.cn"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
-  uri              :
-  bitbucket        :
-  codepen          :
-  dribbble         :
-  flickr           :
-  facebook         :
-  foursquare       :
   github           : "https://github.com/hjchen-hdu"
-  google_plus      :
-  keybase          :
-  instagram        :
-  impactstory      : # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
-  lastfm           :
-  linkedin         : # e.g., "linkedin username"
   dblp             : # e.g., "https://dblp.org/pid/xx/xxxx.html"
   orcid            : "https://orcid.org/0009-0003-2652-9041"
-  pinterest        :
-  soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
-  steam            :
-  tumblr           :
-  twitter          : 
-  vine             :
-  weibo            :
-  xing             :
-  youtube          :
-  wikipedia        :
-  wechat           : "images/Wechat.jpg"
+  wechat           : "images/Wechat.jpg" # Path to the WeChat icon or QR code image
 
 
 # Reading Files
