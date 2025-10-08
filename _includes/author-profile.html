@@ -94,6 +94,13 @@
       {% if author.weibo %}
         <li><a href="https://www.weibo.com/{{ author.weibo }}"><i class="fab fa-fw fa-weibo" aria-hidden="true"></i> Weibo</a></li>
       {% endif %}
+      {% if author.wechat %}
+        <li>
+          <i class="fas fa-fw fa-qrcode" aria-hidden="true"></i>
+          <span>WeChat</span>
+          <div style="margin-top:0.5em;"><img src="{{ author.wechat }}" alt="WeChat QR" style="max-width:160px; height:auto; display:block; border:1px solid #eee; padding:4px; background:#fff;"></div>
+        </li>
+      {% endif %}
       {% if author.flickr %}
         <li><a href="https://www.flickr.com/{{ author.flickr }}"><i class="fab fa-fw fa-flickr" aria-hidden="true"></i> Flickr</a></li>
       {% endif %}
@@ -188,6 +195,11 @@
       {% endif %}
       {% if author.weibo %}
         <a href="https://www.weibo.com/{{ author.weibo }}"><i class="fab fa-fw fa-weibo" aria-hidden="true"></i></a>
+      {% endif %}
+      {% if author.wechat %}
+        <a href="#" title="WeChat">
+          <img src="{{ author.wechat }}" alt="WeChat" style="width:28px; height:28px; border-radius:3px; border:1px solid #ddd;">
+        </a>
       {% endif %}
       {% if author.flickr %}
         <a href="https://www.flickr.com/{{ author.flickr }}"><i class="fab fa-fw fa-flickr" aria-hidden="true"></i></a>
