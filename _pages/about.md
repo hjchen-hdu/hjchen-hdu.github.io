@@ -79,7 +79,7 @@ Pengfei Jiao, **Hongjiang Chen**, Xuan Guo, Zhidong Zhao, Dongxiao He, and Di Ji
 - *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
 
-# 💻 Departmental & Academic Service
+# 💻 Academic Service
 - Conference Reviewer:
   - AAAI-26, KDD-24
 - Journal Reviewer:

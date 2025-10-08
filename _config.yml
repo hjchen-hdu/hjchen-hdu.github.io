@@ -31,7 +31,7 @@ author:
   github           : "https://github.com/hjchen-hdu"
   dblp             : # e.g., "https://dblp.org/pid/xx/xxxx.html"
   orcid            : "https://orcid.org/0009-0003-2652-9041"
-  wechat           : "images/Wechat.jpg" # Path to the WeChat icon or QR code image
+  # wechat           : "images/Wechat.jpg" # Path to the WeChat icon or QR code image
 
 
 # Reading Files
