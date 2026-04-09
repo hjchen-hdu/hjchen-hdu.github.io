@@ -65,6 +65,9 @@ Pengfei Jiao, **Hongjiang Chen**, Xuan Guo, Zhidong Zhao, Dongxiao He, and Di Ji
 </div>
 </div>
 
+# 💬 Experiences
+- *2026.04-Present*: &nbsp; Polyu Visiting Ph.D.: Retrieval-Augmented Generation. Supervised by [Yujuan Ding](https://joanding.github.io/) and [Wenqi Fan](https://wenqifan03.github.io/).
+- *2025.04-2026.04*: &nbsp; Griffith University Visiting Ph.D.: Explain AI, Mutli-Agent System. Supervised by [Xin Zheng](https://amanda-zheng.github.io/), [Yixin Liu](https://yixinliu233.github.io/) and [Shirui Pan](https://trust-agi.github.io/author/shirui-pan/).
 
 <!-- 
 # 📖 Educations
@@ -83,4 +86,4 @@ Pengfei Jiao, **Hongjiang Chen**, Xuan Guo, Zhidong Zhao, Dongxiao He, and Di Ji
 - Conference Reviewer:
   - AAAI-26, KDD-24
 - Journal Reviewer:
-  - TNNLS, Pattern Recognition, Neural Networks, Information Sciences
+  - IEEE TNNLS, IEEE SMCA, Pattern Recognition, Neural Networks, Information Sciences
