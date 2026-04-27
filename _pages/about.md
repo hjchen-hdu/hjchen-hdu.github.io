@@ -21,12 +21,27 @@ I am currently a PhD candidate at the Hangzhou Dianzi University, supervised by 
 My research interests include data mining, temporal graph neural networks, and graph for LLM-based agents.
 
 # 🔥 News
+- *2026.04*: &nbsp;🎉🎉 One paper was accepted by IEEE Transactions on Artificial Intelligence 2026 Journal. 
 - *2025.09*: &nbsp;🎉🎉 One paper was accepted by IJCAI 2025 Survey track. 
 - *2025.07*: &nbsp;🎉🎉 One paper was accepted by Pattern Recognition Journal.
 - *2024.03*: &nbsp;🎉🎉 One paper was accepted by Neural Networks Journal.
 - *2023.09*: &nbsp;🎉🎉 One paper was accepted by ECML-PKDD 2023.
 
 # 📝 Publications 
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE TAI 2026</div><img src='images/survey.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[LGAT: Towards Local-Global Adaptive Temporal Graph Representation Learning
+](https://ieeexplore.ieee.org/document/11488184)
+
+**Hongjiang Chen**, Pengfei Jiao, Xuan Guo, Mengzhou Gao, and Zhidong Zhao
+
+[**Paper**](https://ieeexplore.ieee.org/document/11488184)
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJCAI'25</div><img src='images/survey.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -40,7 +55,7 @@ Pengfei Jiao, **Hongjiang Chen**, Xuan Guo, Zhidong Zhao, Dongxiao He, and Di Ji
 
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Pattern Recognition 2025</div><img src='images/TGFormer.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Pattern Recognition 2026</div><img src='images/TGFormer.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [TGFormer: Towards temporal graph transformer with auto-correlation mechanism](https://www.sciencedirect.com/science/article/abs/pii/S0031320325007137)
@@ -86,4 +101,4 @@ Pengfei Jiao, **Hongjiang Chen**, Xuan Guo, Zhidong Zhao, Dongxiao He, and Di Ji
 - Conference Reviewer:
   - AAAI-26, KDD-24
 - Journal Reviewer:
-  - IEEE TNNLS, IEEE SMCA, Pattern Recognition, Neural Networks, Information Sciences
+  - IEEE TNNLS, IEEE TSMC, Pattern Recognition, Neural Networks, Information Sciences, Knowledge-Based Systems
