@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
+import { getBrowserStorage } from '@/lib/browserStorage';
 
 export type Theme = 'light' | 'dark' | 'system';
 
@@ -29,10 +30,7 @@ export const useThemeStore = create<ThemeStore>()(
     {
       name: 'theme-storage',
       storage: createJSONStorage(() => {
-        if (typeof window !== 'undefined') {
-          return localStorage;
-        }
-        return {
+        return getBrowserStorage() || {
           getItem: () => null,
           setItem: () => { },
           removeItem: () => { },

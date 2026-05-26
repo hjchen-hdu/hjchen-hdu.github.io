@@ -1,7 +1,15 @@
 'use client';
 
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import {
+    ArrowRightIcon,
+    BookOpenIcon,
+    CodeBracketIcon,
+    DocumentTextIcon,
+    NewspaperIcon,
+} from '@heroicons/react/24/outline';
 import { Publication } from '@/types/publication';
 import { useMessages } from '@/lib/i18n/useMessages';
 import FormattedBibTeXText from '@/components/publications/FormattedBibTeXText';
@@ -15,6 +23,8 @@ interface SelectedPublicationsProps {
 export default function SelectedPublications({ publications, title, enableOnePageMode = false }: SelectedPublicationsProps) {
     const messages = useMessages();
     const resolvedTitle = title || messages.home.selectedPublications;
+    const [expandedAbstractId, setExpandedAbstractId] = useState<string | null>(null);
+    const [expandedBibtexId, setExpandedBibtexId] = useState<string | null>(null);
 
     return (
         <motion.section
@@ -27,9 +37,10 @@ export default function SelectedPublications({ publications, title, enableOnePag
                 <Link
                     href={enableOnePageMode ? "/#publications" : "/publications"}
                     prefetch={true}
-                    className="text-accent hover:text-accent-dark text-sm font-medium transition-all duration-200 rounded hover:bg-accent/10 hover:shadow-sm"
+                    className="inline-flex items-center gap-1.5 rounded px-1.5 py-1 text-sm font-medium text-accent transition-all duration-200 hover:bg-accent/10 hover:text-accent-dark hover:shadow-sm"
                 >
-                    {messages.home.viewAll} →
+                    <span>{messages.home.viewAll}</span>
+                    <ArrowRightIcon className="h-4 w-4" />
                 </Link>
             </div>
             <div className="space-y-4">
@@ -65,6 +76,69 @@ export default function SelectedPublications({ publications, title, enableOnePag
                                 {pub.description}
                             </p>
                         )}
+                        {expandedAbstractId === pub.id && pub.abstract && (
+                            <div className="mt-3 rounded-lg border border-neutral-200 bg-white/70 p-3 text-sm leading-relaxed text-neutral-600 dark:border-[rgba(148,163,184,0.24)] dark:bg-neutral-900/50 dark:text-neutral-500">
+                                {pub.abstract}
+                            </div>
+                        )}
+                        {expandedBibtexId === pub.id && pub.bibtex && (
+                            <div className="mt-3 rounded-lg border border-neutral-200 bg-white/70 p-3 dark:border-[rgba(148,163,184,0.24)] dark:bg-neutral-900/50">
+                                <pre className="overflow-x-auto whitespace-pre-wrap font-mono text-xs leading-relaxed text-neutral-600 dark:text-neutral-500">
+                                    {pub.bibtex}
+                                </pre>
+                            </div>
+                        )}
+                        <div className="mt-3 flex items-end justify-between gap-3">
+                            <div className="flex flex-wrap gap-2">
+                                {(pub.pdfUrl || pub.url || pub.doi) && (
+                                    <a
+                                        href={pub.pdfUrl || pub.url || `https://doi.org/${pub.doi}`}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center gap-1.5 rounded-md bg-white px-2.5 py-1 text-xs font-medium text-neutral-700 ring-1 ring-neutral-200 transition-colors hover:bg-accent hover:text-white dark:bg-neutral-900 dark:text-neutral-300 dark:ring-[rgba(148,163,184,0.24)]"
+                                    >
+                                        <NewspaperIcon className="h-3.5 w-3.5" />
+                                        <span>Paper</span>
+                                    </a>
+                                )}
+                                {pub.abstract && (
+                                    <button
+                                        type="button"
+                                        onClick={() => setExpandedAbstractId(expandedAbstractId === pub.id ? null : pub.id)}
+                                        className="inline-flex items-center gap-1.5 rounded-md bg-white px-2.5 py-1 text-xs font-medium text-neutral-700 ring-1 ring-neutral-200 transition-colors hover:bg-accent hover:text-white dark:bg-neutral-900 dark:text-neutral-300 dark:ring-[rgba(148,163,184,0.24)]"
+                                    >
+                                        <DocumentTextIcon className="h-3.5 w-3.5" />
+                                        <span>Abstract</span>
+                                    </button>
+                                )}
+                                {pub.bibtex && (
+                                    <button
+                                        type="button"
+                                        onClick={() => setExpandedBibtexId(expandedBibtexId === pub.id ? null : pub.id)}
+                                        className="inline-flex items-center gap-1.5 rounded-md bg-white px-2.5 py-1 text-xs font-medium text-neutral-700 ring-1 ring-neutral-200 transition-colors hover:bg-accent hover:text-white dark:bg-neutral-900 dark:text-neutral-300 dark:ring-[rgba(148,163,184,0.24)]"
+                                    >
+                                        <BookOpenIcon className="h-3.5 w-3.5" />
+                                        <span>BibTeX</span>
+                                    </button>
+                                )}
+                                {pub.code && (
+                                    <a
+                                        href={pub.code}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center gap-1.5 rounded-md bg-white px-2.5 py-1 text-xs font-medium text-neutral-700 ring-1 ring-neutral-200 transition-colors hover:bg-accent hover:text-white dark:bg-neutral-900 dark:text-neutral-300 dark:ring-[rgba(148,163,184,0.24)]"
+                                    >
+                                        <CodeBracketIcon className="h-3.5 w-3.5" />
+                                        <span>Code</span>
+                                    </a>
+                                )}
+                            </div>
+                            {pub.rank && (
+                                <span className="inline-flex items-center rounded-md border border-accent/30 bg-accent/10 px-2 py-1 text-xs font-semibold text-accent shadow-sm">
+                                    {pub.rank}
+                                </span>
+                            )}
+                        </div>
                     </motion.div>
                 ))}
             </div>

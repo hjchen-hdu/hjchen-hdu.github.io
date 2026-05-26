@@ -1,6 +1,7 @@
 'use client';
 
 import { create } from 'zustand';
+import { getBrowserStorage } from '@/lib/browserStorage';
 import { matchLocale } from '@/lib/i18n/config';
 import type { I18nRuntimeConfig } from '@/types/i18n';
 
@@ -24,7 +25,7 @@ function updateDocumentLocale(locale: string) {
 
 function readPersistedLocale(locales: string[]): string | null {
   try {
-    const raw = localStorage.getItem(LOCALE_STORAGE_KEY);
+    const raw = getBrowserStorage()?.getItem(LOCALE_STORAGE_KEY) || null;
     return matchLocale(raw, locales);
   } catch {
     return null;
@@ -33,7 +34,7 @@ function readPersistedLocale(locales: string[]): string | null {
 
 function writePersistedLocale(locale: string) {
   try {
-    localStorage.setItem(LOCALE_STORAGE_KEY, locale);
+    getBrowserStorage()?.setItem(LOCALE_STORAGE_KEY, locale);
   } catch {
     // ignore storage errors
   }
@@ -41,7 +42,7 @@ function writePersistedLocale(locale: string) {
 
 function clearPersistedLocale() {
   try {
-    localStorage.removeItem(LOCALE_STORAGE_KEY);
+    getBrowserStorage()?.removeItem(LOCALE_STORAGE_KEY);
   } catch {
     // ignore storage errors
   }

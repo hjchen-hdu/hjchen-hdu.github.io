@@ -2,6 +2,7 @@
 
 import Profile from '@/components/home/Profile';
 import About from '@/components/home/About';
+import ExperienceSection, { type ExperienceItem } from '@/components/home/ExperienceSection';
 import SelectedPublications from '@/components/home/SelectedPublications';
 import News, { NewsItem } from '@/components/home/News';
 import PublicationsList from '@/components/publications/PublicationsList';
@@ -14,14 +15,14 @@ import { useLocaleStore } from '@/lib/stores/localeStore';
 
 interface SectionConfig {
   id: string;
-  type: 'markdown' | 'publications' | 'list';
+  type: 'markdown' | 'publications' | 'list' | 'experiences';
   title?: string;
   source?: string;
   filter?: string;
   limit?: number;
   content?: string;
   publications?: Publication[];
-  items?: NewsItem[];
+  items?: NewsItem[] | ExperienceItem[];
 }
 
 type PageData =
@@ -91,7 +92,15 @@ export default function HomePageClient({ dataByLocale, defaultLocale }: HomePage
                     return (
                       <News
                         key={section.id}
-                        items={section.items || []}
+                        items={(section.items || []) as NewsItem[]}
+                        title={section.title}
+                      />
+                    );
+                  case 'experiences':
+                    return (
+                      <ExperienceSection
+                        key={section.id}
+                        items={(section.items || []) as ExperienceItem[]}
                         title={section.title}
                       />
                     );

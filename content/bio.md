@@ -1,5 +1,3 @@
-I am a PhD student at the School of Science, University of Example, advised by [Prof. Advisor One](https://example.com) and [Dr. Advisor Two](https://example.com).
+I am currently a PhD candidate at the Hangzhou Dianzi University, supervised by Professor [Zhidong Zhao](https://faculty.hdu.edu.cn/wlkjaqxy/zzd/main.htm) and [Pengfei Jiao](https://cspjiao.github.io/). I am open to any research collaboration and internship. 🥳 Please feel free to contact me via [Email](mailto:hchen@hdu.edu.cn) or [WeChat](images/Wechat.jpg).
 
-Prior to this, I obtained a BSc degree with First Class Honours in Natural Science from the University of Example.
-
-My current research focuses on investigating the mathematical principles of natural philosophy.
+My research interests include data mining, temporal graph neural networks, and graph for LLM-based agents.

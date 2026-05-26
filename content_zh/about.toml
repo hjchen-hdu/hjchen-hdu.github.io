@@ -3,9 +3,9 @@ title = "关于我"
 
 [profile]
 research_interests = [
-  "计算物理",
-  "数学原理",
-  "定理证明"
+  "数据挖掘",
+  "多智能体系统",
+  "检索增强生成",
 ]
 
 [[sections]]
@@ -15,6 +15,12 @@ source = "bio.md"
 title = "关于我"
 
 [[sections]]
+id = "news"
+type = "list"
+title = "动态"
+source = "news.toml"
+
+[[sections]]
 id = "featured_publications"
 type = "publications"
 title = "精选论文"
@@ -22,7 +28,27 @@ filter = "selected"
 limit = 5
 
 [[sections]]
-id = "news"
-type = "list"
-title = "动态"
-source = "news.toml"
+id = "experiences"
+type = "experiences"
+title = "访问经历"
+
+[[sections.items]]
+period = "2026.04-至今"
+institution = "香港理工大学"
+position = "访问博士生"
+directions = ["Retrieval-Augmented Generation"]
+supervisors = [
+  { name = "Yujuan Ding", url = "https://joanding.github.io/" },
+  { name = "Wenqi Fan", url = "https://wenqifan03.github.io/" },
+]
+
+[[sections.items]]
+period = "2025.04-2026.04"
+institution = "格里菲斯大学"
+position = "访问博士生"
+directions = ["Explainable AI", "Multi-Agent Systems"]
+supervisors = [
+  { name = "Xin Zheng", url = "https://amanda-zheng.github.io/" },
+  { name = "Yixin Liu", url = "https://yixinliu233.github.io/" },
+  { name = "Shirui Pan", url = "https://trust-agi.github.io/author/shirui-pan/" },
+]

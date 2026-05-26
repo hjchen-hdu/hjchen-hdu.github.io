@@ -9,7 +9,9 @@ import {
     CalendarIcon,
     BookOpenIcon,
     ClipboardDocumentIcon,
-    DocumentTextIcon
+    CodeBracketIcon,
+    DocumentTextIcon,
+    NewspaperIcon
 } from '@heroicons/react/24/outline';
 import { Publication } from '@/types/publication';
 import { PublicationPageConfig } from '@/types/page';
@@ -241,24 +243,15 @@ export default function PublicationsList({ config, publications, embedded = fals
                                     )}
 
                                     <div className="flex flex-wrap gap-2 mt-auto">
-                                        {pub.doi && (
+                                        {(pub.pdfUrl || pub.url || pub.doi) && (
                                             <a
-                                                href={`https://doi.org/${pub.doi}`}
+                                                href={pub.pdfUrl || pub.url || `https://doi.org/${pub.doi}`}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                                 className="inline-flex items-center px-3 py-1 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white transition-colors"
                                             >
-                                                DOI
-                                            </a>
-                                        )}
-                                        {pub.code && (
-                                            <a
-                                                href={pub.code}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="inline-flex items-center px-3 py-1 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white transition-colors"
-                                            >
-                                                {messages.publications.code}
+                                                <NewspaperIcon className="h-3 w-3 mr-1.5" />
+                                                Paper
                                             </a>
                                         )}
                                         {pub.abstract && (
@@ -288,6 +281,22 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                 <BookOpenIcon className="h-3 w-3 mr-1.5" />
                                                 {messages.publications.bibtex}
                                             </button>
+                                        )}
+                                        {pub.code && (
+                                            <a
+                                                href={pub.code}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="inline-flex items-center px-3 py-1 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white transition-colors"
+                                            >
+                                                <CodeBracketIcon className="h-3 w-3 mr-1.5" />
+                                                {messages.publications.code}
+                                            </a>
+                                        )}
+                                        {pub.rank && (
+                                            <span className="ml-auto inline-flex items-center px-3 py-1 rounded-md text-xs font-semibold border border-accent/30 bg-accent/10 text-accent">
+                                                {pub.rank}
+                                            </span>
                                         )}
                                     </div>
 

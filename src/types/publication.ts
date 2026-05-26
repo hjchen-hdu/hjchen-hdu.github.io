@@ -50,6 +50,7 @@ export interface Publication {
   featured?: boolean;
   selected?: boolean;
   preview?: string;
+  rank?: string;
   summary?: string;
   researchArea: ResearchArea;
   description?: string;

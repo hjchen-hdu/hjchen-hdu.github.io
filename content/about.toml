@@ -3,9 +3,9 @@ title = "About"
 
 [profile]
 research_interests = [
-  "Computational Physics",
-  "Mathematical Principles",
-  "Proof of Theorems"
+  "Data Mining",
+  "Multi-Agent System",
+  "Retrieval-Augmented Generation",
 ]
 
 [[sections]]
@@ -15,6 +15,13 @@ source = "bio.md"
 title = "About"
 
 [[sections]]
+id = "news"
+type = "list"
+title = "News"
+source = "news.toml"
+
+
+[[sections]]
 id = "featured_publications"
 type = "publications"
 title = "Selected Publications"
@@ -22,8 +29,27 @@ filter = "selected"
 limit = 5
 
 [[sections]]
-id = "news"
-type = "list"
-title = "News"
-source = "news.toml"
+id = "experiences"
+type = "experiences"
+title = "Experiences"
 
+[[sections.items]]
+period = "2026.04-Present"
+institution = "The Hong Kong Polytechnic University"
+position = "Visiting Ph.D. Researcher"
+directions = ["Retrieval-Augmented Generation"]
+supervisors = [
+  { name = "Yujuan Ding", url = "https://joanding.github.io/" },
+  { name = "Wenqi Fan", url = "https://wenqifan03.github.io/" },
+]
+
+[[sections.items]]
+period = "2025.04-2026.04"
+institution = "Griffith University"
+position = "Visiting Ph.D. Researcher"
+directions = ["Explainable AI", "Multi-Agent Systems"]
+supervisors = [
+  { name = "Xin Zheng", url = "https://amanda-zheng.github.io/" },
+  { name = "Yixin Liu", url = "https://yixinliu233.github.io/" },
+  { name = "Shirui Pan", url = "https://trust-agi.github.io/author/shirui-pan/" },
+]

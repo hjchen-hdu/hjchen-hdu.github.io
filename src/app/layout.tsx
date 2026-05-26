@@ -43,6 +43,10 @@ function buildLocaleBootstrapScript(config: ReturnType<typeof getRuntimeI18nConf
     try {
       const cfg = ${serializedConfig};
       const storageKey = 'locale-storage';
+      const storage = typeof window !== 'undefined' ? window.localStorage : null;
+      const canUseStorage = storage &&
+        typeof storage.getItem === 'function' &&
+        typeof storage.setItem === 'function';
       const normalize = (value) => typeof value === 'string' ? value.trim().replace('_', '-').toLowerCase() : '';
       const matchLocale = (candidate) => {
         const normalized = normalize(candidate);
@@ -57,8 +61,8 @@ function buildLocaleBootstrapScript(config: ReturnType<typeof getRuntimeI18nConf
 
       if (!cfg.enabled) {
         resolved = cfg.defaultLocale;
-      } else if (cfg.persist) {
-        resolved = matchLocale(localStorage.getItem(storageKey));
+      } else if (cfg.persist && canUseStorage) {
+        resolved = matchLocale(storage.getItem(storageKey));
       }
 
       if (!resolved) {
@@ -77,8 +81,8 @@ function buildLocaleBootstrapScript(config: ReturnType<typeof getRuntimeI18nConf
       root.lang = resolved;
       root.setAttribute('data-locale', resolved);
 
-      if (cfg.persist) {
-        localStorage.setItem(storageKey, resolved);
+      if (cfg.persist && canUseStorage) {
+        storage.setItem(storageKey, resolved);
       }
     } catch (e) {
       const root = document.documentElement;
@@ -145,7 +149,9 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: `
               try {
-                const theme = localStorage.getItem('theme-storage');
+                const storage = typeof window !== 'undefined' ? window.localStorage : null;
+                const canUseStorage = storage && typeof storage.getItem === 'function';
+                const theme = canUseStorage ? storage.getItem('theme-storage') : null;
                 const parsed = theme ? JSON.parse(theme) : null;
                 const setting = parsed?.state?.theme || 'system';
                 const prefersDark = typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
